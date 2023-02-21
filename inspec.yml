@@ -1,0 +1,18 @@
+name: my-gcp-tests
+title: My GCP tests
+version: 0.1.0
+
+backend:
+  name: gcp
+  project_id: project-lab2-323119
+
+supports:
+  - platform: gcp
+    release: latest
+
+depends:
+  - name: inspec-gcp
+    url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
+
+controls:
+  - gcp-cloud-router
